@@ -3,6 +3,7 @@ def russia_roulette():
     import random
     money = []
     money_win = 200
+    print("You found yourself before a small table. On it lies a gun. You have a choice to make.")
 
     def roulette():
         run = random.randint in (1,6)
@@ -12,10 +13,18 @@ def russia_roulette():
             print("Great, you didn't get shot. You earned your price!")
             print(f"You just won {money_win}.")
             money.append(money_win)
+            que = input("Do you want to play another round?")
+            while que.lower() != "yes" and que.lower() != "no":
+                print("Please answer with a simple yes or no. ")
+                que = input("Do you want to risk and play a round of a russian rulette? ")
+            if que.lower() == "yes":
+                print("Interesting choice. Let's see if luck is on your side again.")
+                roulette()
+            elif que.lower() == "no":
+                print("Alright.")
 
 
     def roulette_story():
-        print("You found yourself before a small table. On it lies a gun. You have a choice to make.")
         que = input("Do you want to risk and play a round of a russian rulette? ")
         while que.lower() != "yes" and que.lower() != "no":
             print("Please answer with a simple yes or no. ")
@@ -24,11 +33,12 @@ def russia_roulette():
             print("Interesting choice. Let's see if luck is on your side.")
             roulette()
         elif que.lower() == "no":
-            print("Why are you so scared?")
+            print("Well, if you say so...")
             
 
     roulette_story()
     
 
 russia_roulette()
+
 
