@@ -1,2 +1,1 @@
-# Poker_Game
-Kdo nema povoleni nešahat nuf
+11.05 ver of struc can posibly work 
