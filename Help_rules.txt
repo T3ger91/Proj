@@ -1,5 +1,5 @@
 rules for each game
-Ruulette
+Roulette
     There are three types of bets - inside bets, outside bets andf random bets. 
     There are 36 slots so make sure when entering bets to enter a valid number. 
 
