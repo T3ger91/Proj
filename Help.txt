@@ -1,0 +1,9 @@
+encountering a monster
+    A player can either choose to fight if - press f or escape - press e. 
+    if the player wants to fight:
+        A fight is done my rolling a die. There ale also weapons that give the player higher chance of beating the monster - the die has a lower number of edges.
+        The player gets a random weapon and will see how many sided die they have.
+    if the player chooses to escape:
+        They sucesfully ran away from the monster
+
+    
