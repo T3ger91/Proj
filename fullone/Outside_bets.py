@@ -1,12 +1,14 @@
+#outsidebets function, cant be separated from: inside bets,bets,ruleta
 def Outside_bet(deposite):
     import random
     from time import sleep
+    #all types of bets in game
     start_sentence =["What do you want to choose", "What do you want to bet on?"]
     bets = ["Value of numbers, Odd or Even numbers, Color of number, Column of numbers, Dozen of numbers", 
             "Red/Black bet, Odd/Even bet, High/Low bet, Dozen bet, Column bet"]
     print("    _\n   / |------------------------------------------------------------|-----------------|\n  /  [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36] |third column  |                 |\n < 0 [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35] |second column |    Win: 2:1     |\n  \  [1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34] |first column  |                 |\n   \_|---------------------------------------------|--------------|                 |\n     |  1. Dozen  |   2. Dozen     |   3. Dozen    | Probability of winning: 32,43% |\n     |------------|----------------|---------------|--------------------------------|\n     | 1 to 18 | even | red | black | odd |19 to 36| Probability of winning: 48,65% |\n     |---------------------------------------------| Win: 1:1                       |\n                 |---------------------|           |--------------------------------|\n                 |       0 = green     |\n                 | Even number = Black |\n                 |   Odd number = Red  |\n                 |---------------------|")
     choice = input(f"{random.choice(start_sentence)}: {random.choice(bets)}? \n").lower()
-
+    
     number = random.randint(0,36)
     if number == 0:
         color = "Green"
@@ -15,11 +17,11 @@ def Outside_bet(deposite):
             color = "Balck"
         else:
             color = "Red"
-
+    #rulet structure in console
     column1 = [1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34]
     column2 = [2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35]
     column3 = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36]
-
+    #giveme the number and lets go to play 
     if choice == "value of numbers" or choice == "value of number" or choice == "value" or choice == "high/low bet" or choice == "high" or choice == "low":#
         while True:
             choice_type = input("What do you want to bet on?\nHigh numbers or Low numbers: ").lower()
@@ -36,7 +38,7 @@ def Outside_bet(deposite):
                     deposite = 0
                     #print(deposite)
                     break
-
+            #low numbers bet logic 
             if choice_type == "low number" or choice_type == "low numbers" or choice_type == "low" or choice_type == "lower":#
                 if number in range(1,18):
                     sleep(1)
@@ -45,6 +47,7 @@ def Outside_bet(deposite):
                     #print(deposite)
                     break
                 else:
+                    #lose sentense 
                     sleep(1)
                     print(f"{color} {number} came up you lose! You lost your deposit")
                     deposite = 0
@@ -53,7 +56,7 @@ def Outside_bet(deposite):
             else: 
                 print("=" * 40)
                 print("Enter the correct syntax:")
-            
+            #odd or even number rolls 
     if choice == "odd or even number" or choice == "odd or even numbers" or choice == "odd" or choice == "even" or choice == "odd/even bet"  :#
         while True:
             choice_type = input("Do you want to bet on odd or even number?  ").lower()
@@ -71,6 +74,7 @@ def Outside_bet(deposite):
                     #print(deposite)
                     break
             if choice_type == "even nuumber" or choice_type== "even numbers" or choice_type== "even" :#
+                #win sentense
                 if number %2 == 0:
                     sleep(1)
                     print(f"{color} {number} came up you win! Your deposit has been doubled." )
@@ -86,7 +90,7 @@ def Outside_bet(deposite):
             else:
                 print("=" * 40)
                 print("Enter the correct syntax:")
-            
+            #color of numbers, bets on black / red
     if choice == "color of number" or choice == "color of numbers" or choice == "color" or choice == "red/black bet" or choice == "red" or choice == "black" :
         while True:
             choice_type = input("What is your lucky color red or black? ").lower()
@@ -164,7 +168,7 @@ def Outside_bet(deposite):
             else:
                 print("=" * 40)
                 print("Enter the correct syntax:")
-
+    #3 parts of rulet, bets on dozen, logic for them as well 
     if choice == "dozen of numbers" or choice == "dozen of number" or choice == "dozen":
         while True:
             choice_type = input("What is your lucky Dozen of numbers ? First, Second or Third ?  ").lower()
