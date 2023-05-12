@@ -1,4 +1,18 @@
+---------------------
+Plugins and software:
+Keyboard
+Pygame
+Random
+Os
+PySimplyGUI
+Tkinter
+Python 3
+Time
+Pip
+Git
+---------------------
 rules for each game
+
 Roulette
     There are three types of bets - inside bets, outside bets andf random bets. 
     There are 36 slots so make sure when entering bets to enter a valid number. 
@@ -22,7 +36,7 @@ Roulette
 
     Random bets:
     A player can enter any number they want the only limit is that they can bet only up to 18 numbers. 
-
+----------------
 Poker
     There are many combinations a player can bet on
 
@@ -38,11 +52,11 @@ Poker
     High Card - When no other hand is made, the highest-ranking card in a player's hand is used to determine the winner.
   
 
-
+-----------------
 Russian Roulette
     The rules for a russian roulette are simple. The player is given a gun, in there are 6 slots and 1 of them contains a bullet. 
     If the player is lucky and doesn't get killed, they will earn a financial reward. 
-
+-----------------
 Slots
     A player bets a certain amound of money and runs the machine and he will get a group of three numbers. 
     Depending on if three or two numbers are the same and what numbers are they, the player will get win a 
