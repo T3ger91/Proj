@@ -9,6 +9,7 @@ def choisemain():
       #  [sg.Button('Rules', size=(30, 2))],
       #  [sg.Button('Exit', size=(30, 2))]
    # ]
+    #main logic and inic of window to chose what u whant to do normaly play, rules, exit
     def startmain():
 
         window = sg.Window('Menu', layout)
