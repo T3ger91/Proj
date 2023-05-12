@@ -1,5 +1,4 @@
-#main part of logic code for ruleta game, incudes insede/outside and random bets
-#cant work without them 
+#main and only one file for Rusian rulet-RR game 
 def russia_roulette():
     import random
     money = []
