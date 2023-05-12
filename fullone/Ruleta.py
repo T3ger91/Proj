@@ -1,8 +1,11 @@
+#main file for rululete game, inculudes inside, outside and random bets
+#cant work without mantioned files
 def Ruleta(budget):
     from Inside_bets import Inside_bet
     from Outside_bets import Outside_bet
     from Random_bet import Random_bet
     z = 0
+    #story tail with logic 
     while True:
         z = z + 1
         sentences = ["Welcome to a rulet game!!! What tipe of bets system you want to play: Inside bets, Outside bets or Random bets?"]
