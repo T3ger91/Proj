@@ -1,3 +1,6 @@
+#inside bet function part off Ruleta
+#cant be separated from code 
+
 def Inside_bet(deposite):
     import random
     from time import sleep
@@ -44,6 +47,7 @@ def Inside_bet(deposite):
             except ValueError:
                 print("*" * 40)
                 print("Enter correct syntax")
+                #logic of bets with chances and random 
     while True:
         choice = input(f"{random.choice(start_sentence)}: {random.choice(bets)}? \n").lower()
         if choice == "one" or choice == "1" or choice == "one number" or choice == "straight up bet" or choice == "straight up" or choice == "straight":#
@@ -78,6 +82,7 @@ def Inside_bet(deposite):
                     print("*" * 40)
                     print("Enter correct syntax")
             break
+            #logic for zero bet abd 
         if choice == "zero" or choice == "zero bet" or choice == "0" or choice == "0 bet" or choice == "zero number" or choice == "0 number":
             while True:
                 number = random.randint(0,36)
