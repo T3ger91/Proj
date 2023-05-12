@@ -11,7 +11,9 @@ from Ruleta import Ruleta
 from enemies import enemies
 from RR import russia_roulette
 
-
+#in progres
+#random games without repeating 
+#every room ll have other staff or nothing, just run away 
 def gameR():
     global money
     money = 1000
