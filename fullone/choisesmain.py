@@ -1,4 +1,4 @@
-
+#main choises menu on the start of the game, ui and other staff plugins must be on place to start it 
 def choisemain():
     import webbrowser
     global solution
