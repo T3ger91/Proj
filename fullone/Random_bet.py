@@ -1,8 +1,12 @@
+#cant be separated from: inside bets,bets,ruleta
+#random bet for ruleta game, main file RR.py
 def Random_bet(deposite):
     import random
     from time import sleep
+    #random choises 
     start_sentence =["On what numbers do you want to bet on?"]
     choice = input(f"{random.choice(start_sentence)} ?\nDon't enter more than 18 numbers and don't try enter same numbers!\n")
+    #logic for it with chances
     while True:
         number = random.randint(0,36)
         if number == 0:
