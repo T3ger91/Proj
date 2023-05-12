@@ -1,3 +1,4 @@
+#main structure and also main file with all logic to start game, single games, random gen off rooms, choises in menu and ...
 import pygame
 import random
 import time
