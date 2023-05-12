@@ -1,9 +1,11 @@
+#main part of logic code for ruleta game, incudes insede/outside and random bets
+#cant work without them 
 def russia_roulette():
     import random
     money = []
     money_win = 200
     print("You found yourself before a small table. On it lies a gun. You have a choice to make.")
-
+#main function
     def roulette():
         run = random.randint in (1,6)
         if run == 1:
@@ -22,7 +24,7 @@ def russia_roulette():
             elif que.lower() == "no":
                 print("Alright.")
 
-
+#story tail 
     def roulette_story():
         que = input("Do you want to risk and play a round of a russian rulette? ")
         while que.lower() != "yes" and que.lower() != "no":
