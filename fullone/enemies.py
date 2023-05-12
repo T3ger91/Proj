@@ -1,6 +1,6 @@
 #dodelat fajtení s kostkama
 # funkce která definuje nepratele a jejich zivoty
-
+#main func for fighting 
 def enemies():
     def weapons():
         weapons=["fists","baton","knife","pistol","shotgun","smg","m4","rpg"]
@@ -9,6 +9,7 @@ def enemies():
         for i in range(len(weapons)):
            weapon_dmg_dict[weapons[i]] = dmg[i]
         return weapon_dmg_dict
+    #Hp init
     def enemies_hp():
         import random
         enemies=["prisoner", "prison guard", "policeman", "swat", "solider"]
@@ -18,6 +19,7 @@ def enemies():
         for i in range(len(enemies)):
             enemies_hp_dict[enemies[i]] = hp[i]
         print(f"you encountered a {random.choice(list(enemies_hp_dict.items()))} = HP and you have {random.choice(list(weapons().items()))} =DMG")
+        #keyboard keys init for easy fight 
         def fight_keys():
             print("Press 'f' to fight or 'e' to escape.")
             while True:
@@ -38,6 +40,7 @@ def enemies():
         fight_keys()
         return enemies
     enemies_hp()
+    #dmg generation for enemies 
     def enemies_dmg():
         enemies = enemies_hp()
         dmg = [50, 75, 100, 125, 150]
