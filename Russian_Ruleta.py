@@ -1,7 +1,8 @@
-
+#Rusian rulete as well 
 def russia_roulette(deposite):
     import random
-
+    #main func
+    #logic w random 
     def roulette():
         run = random.randint in (1,6)
         if run == 1:
@@ -10,7 +11,7 @@ def russia_roulette(deposite):
             print("Great, you didn't get shot. You earned your price!")
             print(f"You just won {deposite * 6}.")
 
-
+    #story tail
     def roulette_story():
         print("You found yourself before a small table. On it lies a gun. You have a choice to make.")
         que = input("Do you want to risk and play a round of a russian rulette? ")
@@ -23,7 +24,7 @@ def russia_roulette(deposite):
         elif que.lower() == "no":
             print("Why are you so scared?")
             
-
+    
     roulette_story()
     return deposite
 
