@@ -1,7 +1,8 @@
+#slots game, main and only one func for the game
 def slots():
     import random
     print("In the room you see an old slot machine.")
-
+#story tail 
     def slots_story():
         que = input("Do you want to play? ")
         while que.lower() != "yes" and que.lower() != "no":
@@ -12,14 +13,15 @@ def slots():
             exit()
         elif que.lower() == "yes":
             print("Great.")
+            #chances to win with spetial numbers 
             bet_per3 = {1: 0.9, 2: 0.9, 3: 0.9, 4: 0.8, 5: 0.7, 6: 1.7}
             bet_per2 = {1: 0.5, 2: 0.4, 3: 0.6, 4: 0.4, 5: 0.5, 6: 1.0}
-
+            #logic in random 
             def slots_r():
                 a = random.randint(1, 6)
                 b = random.randint(1, 6)
                 c = random.randint(1, 6)
-
+                #wins logic
                 def money_win3():
                     return bet + (bet * bet_per3.get(a))
 
@@ -46,6 +48,7 @@ def slots():
                     slots_story()
 
             while True:
+                #try with checking for misses in input
                 try:
                     bet = int(input("How much do you want to bet? You can bet between 1 and 100 "))
                     if bet > 1 and bet < 100:
