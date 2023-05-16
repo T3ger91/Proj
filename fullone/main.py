@@ -2,10 +2,11 @@
 import pygame
 import random
 import time
-##import keyboard
+import keyboard
 import tkinter
-##import PySimpleGUI as sg
+import PySimpleGUI as sg
 import webbrowser
+from slow_print import slow_print
 
 global HP
 global money
@@ -13,22 +14,15 @@ global money_win
 global event
 global solution
 global R
+global budget
+from MenuS import Menu
 
-from choisesmain import choisemain
-from time import sleep
-from slots import slots
-from BCC import Poker
-from Ruleta import Ruleta
-from enemies import enemies
-from gamesR import gameR
-from RR import russia_roulette
+budget = 1000
+slow_print(f"1000 this is ur money now\nto escape this asshole place u need to gain 100.000")
 
-choisemain()
-money = 1000
-if solution == 1:
-    gameR()
-elif solution == 2:
-     file_path = 'Rules.html'
-     webbrowser.open(file_path)
+Menu()
+
+
+
 
 

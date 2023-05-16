@@ -1,4 +1,5 @@
-#main and only one file for Rusian rulet-RR game 
+#main and only one file for Rusian rulet-RR game
+from transferR import transfer
 def russia_roulette():
     import random
     money = []
@@ -34,9 +35,10 @@ def russia_roulette():
             roulette()
         elif que.lower() == "no":
             print("Well, if you say so...")
+            transfer()
 
 
     roulette_story()
 
 
-russia_roulette()
+

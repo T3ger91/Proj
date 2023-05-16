@@ -1,13 +1,14 @@
 #inside bet function part off Ruleta
 #cant be separated from: inside bets,bets,ruleta
-
+from slow_print import slow_print
+from slow_printRL import slow_printRL
 def Inside_bet(deposite):
     import random
     from time import sleep
     #all type of bets 
     start_sentence =["What do you want to choose", "What do you want to bet on?"]
     bets = ["Straight up bet, Split bet, Street bet, Corner bet, Line bet or Zero bet", "Zero, one, two, three, four, or six numbers next to each other ?" ]
-    print("    _\n   / |---------------------------------------------|\n  /  | 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36 |\n < 0 | 2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35 |\n  \  | 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34 |\n   \_|---------------------------------------------|\n     | Straight Up bet | Chance: 2,70%  | Win: 35:1|\n     | Zero bet        | Chance: 2,70%  | Win: 35:1|\n     | Split bet       | Chance: 5,41%  | Win: 17:1|\n     | Street bet      | Chance: 8,11%  | Win: 11:1|\n     | Corner bet      | Chance: 10,81% | Win: 8:1 |\n     | Line bet        | Chance: 16,22% | Win: 5:1 |\n     |---------------------------------------------|")
+    slow_printRL("    _\n   / |---------------------------------------------|\n  /  | 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36 |\n < 0 | 2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35 |\n  \  | 1, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34 |\n   \_|---------------------------------------------|\n     | Straight Up bet | Chance: 2,70%  | Win: 35:1|\n     | Zero bet        | Chance: 2,70%  | Win: 35:1|\n     | Split bet       | Chance: 5,41%  | Win: 17:1|\n     | Street bet      | Chance: 8,11%  | Win: 11:1|\n     | Corner bet      | Chance: 10,81% | Win: 8:1 |\n     | Line bet        | Chance: 16,22% | Win: 5:1 |\n     |---------------------------------------------|\n")
     def more_than_one_numbers_bet(x,y):
         import random
         from time import sleep
@@ -23,7 +24,8 @@ def Inside_bet(deposite):
             try:
                 pole = []
                 #enter the lucky numbers
-                choice_type = input("Enter you lucky numbers in row separated by a comma: ")
+                slow_print("Enter you lucky numbers in row separated by a comma: ")
+                choice_type = input()
                 stringpole = choice_type.split(",")
                 for i in stringpole:
                     pole.append(int(i))
@@ -37,14 +39,14 @@ def Inside_bet(deposite):
                     if number in pole:
                         #win
                         sleep(1)
-                        print(f"{color} {number} came up you win! Your deposit was increased 36 times!")
+                        slow_print(f"{color} {number} came up you win! Your deposit was increased 36 times!")
                         deposite =  deposite * y
                         #print(deposite)
                         break
                     else:
                         sleep(1)
                         #lose
-                        print(f"{color} {number} came up you lose! You lost your deposit")
+                        slow_print(f"{color} {number} came up you lose! You lost your deposit")
                         deposite = deposite * 0
                         #print(deposite)
                         break
@@ -65,20 +67,21 @@ def Inside_bet(deposite):
                     else:
                         color = "Red"
                 try:
-                    choice_type = int(input("Enter you lucky number: ")) 
+                    slow_print("Enter you lucky number: ")
+                    choice_type = int(input())
                     if choice_type > 36:
                         print("*" * 40)
                         print("Enter the number on the roulette wheel!")
                     else:       
                         if choice_type == number:
                             sleep(1)
-                            print(f"{color} {number} came up you win! Your deposit was increased 36 times!")
+                            slow_print(f"{color} {number} came up you win! Your deposit was increased 36 times!")
                             deposite = deposite * 36
                             #print(deposite)
                             break
                         else:
                             sleep(1)
-                            print(f"{color} {number} came up you lose! You lost your deposit")
+                            slow_print(f"{color} {number} came up you lose! You lost your deposit")
                             deposite = deposite * 0
                             #print(deposite)
                             break
@@ -100,13 +103,13 @@ def Inside_bet(deposite):
 
                 if number == 0:
                     sleep(1)
-                    print(f"{color} {number} came up you win! Your deposit was increased 36 times!")
+                    slow_print(f"{color} {number} came up you win! Your deposit was increased 36 times!")
                     deposite = deposite * 36
                     #print(deposite)
                     break
                 else:
                     sleep(1)
-                    print(f"{color} {number} came up you lose! You lost your deposit")
+                    slow_print(f"{color} {number} came up you lose! You lost your deposit")
                     deposite = deposite * 0
                     #print(deposite)
                     break
@@ -133,8 +136,9 @@ def Inside_bet(deposite):
             more_than_one_numbers_bet(x,y)
             break
         else:
-            print("Chose the option from menu: ")
+            slow_print("Chose the option from menu: ")
     return deposite
             
 if __name__ == "__main__":
     print("Tento kod se spusti pouze tehdy když jse spuštěn jako hlavní program")
+

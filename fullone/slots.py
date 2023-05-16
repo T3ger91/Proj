@@ -1,18 +1,22 @@
 #slots game, main and only one func for the game
+from transfer import transfer
+from slow_print import slow_print
 def slots():
     import random
-    print("In the room you see an old slot machine.")
+    slow_print("In the room you see an old slot machine.")
 #story tail 
     def slots_story():
-        que = input("Do you want to play? ")
+        slow_print("Do you want to play? ")
+        que = input()
         while que.lower() != "yes" and que.lower() != "no":
             print("Please answer with a simple yes or no. ")
-            que = input("Do you want to play? ")
+            slow_print("Do you want to play? ")
+            que = input()
         if que.lower() == "no":
-            print("Too bad I guess... ")
-            exit()
+            slow_print("Too bad I guess... ")
+            transfer()
         elif que.lower() == "yes":
-            print("Great.")
+            slow_print("Great.")
             #chances to win with spetial numbers 
             bet_per3 = {1: 0.9, 2: 0.9, 3: 0.9, 4: 0.8, 5: 0.7, 6: 1.7}
             bet_per2 = {1: 0.5, 2: 0.4, 3: 0.6, 4: 0.4, 5: 0.5, 6: 1.0}
@@ -33,30 +37,31 @@ def slots():
 
                 print(a, b, c)
                 if a == b and a == c:
-                    print("Nice")
-                    print(f"You won {money_win3()}.")
+                    slow_print("Nice")
+                    slow_print(f"You won {money_win3()}.")
                     slots_story()
                 elif a == b or a == c:
-                    print("Two are the same.")
-                    print(money_win2a())
+                    slow_print("Two are the same.")
+                    slow_print(money_win2a())
                     slots_story()
                 elif b == c:
-                    print(f" You won {money_win2b()}. ")
+                    slow_print(f" You won {money_win2b()}. ")
                     slots_story()
                 else:
-                    print("you lost ")
+                    slow_print("you lost ")
                     slots_story()
 
             while True:
                 #try with checking for misses in input
                 try:
-                    bet = int(input("How much do you want to bet? You can bet between 1 and 100 "))
-                    if bet > 1 and bet < 100:
-                        print("This is by how much more percentagewise you can win with different numbers")
-                        print("For three of the same symbol: ")
+                    slow_print("How much do you want to bet? You can bet between 1 and 100 ")
+                    bet = int(input())
+                    if bet >= 1 and bet < 100:
+                        slow_print("This is by how much more percentagewise you can win with different numbers")
+                        slow_print("For three of the same symbol: ")
                         for i, y in bet_per3.items():
                             print(f" {i} + {int(float(y) * 100)} % of your bet")
-                        print("For two of the same symbol: ")
+                        print(" For two of the same symbol: ")
                         for i, y in bet_per2.items():
                             print(f" {i} + {int(float(y) * 100)} % of your bet")
                         slots_r()
@@ -67,4 +72,4 @@ def slots():
 
     slots_story()
 
-slots()
+
