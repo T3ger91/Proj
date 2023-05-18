@@ -5,7 +5,7 @@ def Random_bet(deposite):
     import random
     from time import sleep
     #random choises
-    slow_print(f"On what numbers do you want to bet on ?\nLimit the input to a maximum of 18 numbers and ensure that the same number is not entered more than once.\n")
+    slow_print(f"On what numbers do you want to bet on ?\nLimit for the input is 18 numbers in a row and separated by comma, like : *1,2*,and same numbers cant be entered more than once.\n")
     choice = input()
     #logic for it with chances
     while True:

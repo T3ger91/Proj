@@ -5,7 +5,7 @@ global current_value
 
 from slots import slots
 from BCC import Poker
-from Ruleta import Ruleta
+
 from slow_print import slow_print
 
 def transfer():
@@ -20,4 +20,4 @@ def transfer():
     elif R == 3:
         Poker(money)
     elif R == 4:
-        Ruleta(money)
+        R == 3

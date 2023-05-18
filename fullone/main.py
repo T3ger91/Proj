@@ -18,7 +18,7 @@ global budget
 from MenuS import Menu
 
 budget = 1000
-slow_print(f"1000 this is ur money now\nto escape this asshole place u need to gain 100.000")
+slow_print(f"1000 this is ur money now\nto escape this asshole place u need to gain 100.000 dinars")
 
 Menu()
 

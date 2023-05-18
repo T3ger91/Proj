@@ -4,6 +4,7 @@ def Poker(budget):
     import random
     from time import sleep
     from slow_print import slow_print  # import slow printing function
+    from transferL import transfer
     while True:
         # budget measure
         if budget == 0:
@@ -12,7 +13,8 @@ def Poker(budget):
         while True:
             # croupier phrases
             try:
-                slow_print("Enter the amount you want to bet from your budget:\n")
+                slow_print("WELCOME to the Poker game, now u must to play")
+                slow_print(" Enter the amount you want to bet from your budget:\n")
                 deposite = int(input())
                 if deposite == 0:
                     slow_print("You can't bet zero! ")
@@ -416,7 +418,7 @@ def Poker(budget):
                         break
                     if button_rect4.collidepoint(event.pos):
                         print("")
-                        exit()
+
             pygame.display.flip()
 
         pygame.quit()

@@ -7,20 +7,17 @@ global current_value
 from slots import slots
 from BCC import Poker
 from Ruleta import Ruleta
-from enemies import enemies
+
 from RR import russia_roulette
 
 R = 0
 #in progres
-#random games without repeating 
-#every room ll have other staff or nothing, just run away
-
-
+#random games without repeating
 def gameR():
     R = 0
     global money
     money = 1000
-    R = random.randint(1,5)
+    R = random.randint(1,4)
     if R == 1:
         russia_roulette()
     elif R == 2:
@@ -29,9 +26,6 @@ def gameR():
         Poker(money)
     elif R == 4:
         Ruleta(money)
-    elif R == 5:
-        enemies()
-
 def gameRF():
     R = 0
     global money
@@ -45,13 +39,11 @@ def gameRF():
         Poker(money)
     elif R == 4:
         Ruleta(money)
-    elif R == 5:
-        enemies()
 def gameR3():
     R = 0
     global money
     money = 1000
-    R = random.randint(1,5)
+    R = random.randint(1,4)
     if R == 1:
         russia_roulette()
     elif R == 2:
@@ -60,14 +52,14 @@ def gameR3():
         Poker(money)
     elif R == 4:
         Ruleta(money)
-    elif R == 5:
-        enemies()
+
+
 
 def gameR4():
     R = 0
     global money
     money = 1000
-    R = random.randint(1,5)
+    R = random.randint(1,4)
     if R == 1:
         russia_roulette()
     elif R == 2:
@@ -76,8 +68,7 @@ def gameR4():
         Poker(money)
     elif R == 4:
         Ruleta(money)
-    elif R == 5:
-        enemies()
+
 
 
 

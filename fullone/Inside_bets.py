@@ -141,4 +141,3 @@ def Inside_bet(deposite):
             
 if __name__ == "__main__":
     print("Tento kod se spusti pouze tehdy když jse spuštěn jako hlavní program")
-

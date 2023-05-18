@@ -14,10 +14,10 @@ def transfer():
     money = 1000
     R = random.randint(1,4)
     if R == 1:
-        slow_print("U need to run coops are on tha way")
+        slow_print("U need to run cops are on tha way")
     elif R == 2:
         slots()
     elif R == 3:
-        Poker(money)
+        R == 1
     elif R == 4:
         Ruleta(money)

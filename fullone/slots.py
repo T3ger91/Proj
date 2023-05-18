@@ -13,7 +13,7 @@ def slots():
             slow_print("Do you want to play? ")
             que = input()
         if que.lower() == "no":
-            slow_print("Too bad I guess... ")
+            slow_print(f"Too bad I guess... \n")
             transfer()
         elif que.lower() == "yes":
             slow_print("Great.")
@@ -38,17 +38,17 @@ def slots():
                 print(a, b, c)
                 if a == b and a == c:
                     slow_print("Nice")
-                    slow_print(f"You have won {money_win3()}.")
+                    slow_print(f"You won {money_win3()}.")
                     slots_story()
                 elif a == b or a == c:
                     slow_print("Two are the same.")
                     slow_print(money_win2a())
                     slots_story()
                 elif b == c:
-                    slow_print(f" You have won {money_win2b()}. ")
+                    slow_print(f" You won {money_win2b()}. \n")
                     slots_story()
                 else:
-                    slow_print("you have lost ")
+                    slow_print("you lost \n")
                     slots_story()
 
             while True:
@@ -57,8 +57,8 @@ def slots():
                     slow_print("How much do you want to bet? You can bet between 1 and 100 ")
                     bet = int(input())
                     if bet >= 1 and bet < 100:
-                        slow_print("This is by how much more percentagewise you can win with different numbers")
-                        slow_print("For three of the same symbol: ")
+                        slow_print("This is by how much more percentagewise you can win with different numbers \n")
+                        slow_print(" For three of the same symbol: \n")
                         for i, y in bet_per3.items():
                             print(f" {i} + {int(float(y) * 100)} % of your bet")
                         print(" For two of the same symbol: ")

@@ -1,11 +1,12 @@
 #main file for rululete game, inculudes inside, outside and random bets
 #cant work without mantioned files
 def Ruleta(budget):
-    global depositeindis
+    global deposite
     from slow_print import slow_print
     from Inside_bets import Inside_bet
     from Outside_bets import Outside_bet
     from Random_bet import Random_bet
+    from transferC import transfer
     z = 0
     k = 0
     while True:
@@ -38,14 +39,14 @@ def Ruleta(budget):
                         print("*" * 40)
                         print("Enter correct syntax int")
                 budget = budget + Inside_bet(deposite)
-                slow_print(f"Your budget is now {budget}. ")
+                slow_print(f" Your budget is now {budget}. ")
                 while True:
                     slow_print("Do you want play again? Yes or No\n")
                     y = input().lower()
                     if y == "yes":
                         break
                     elif y == "no":
-                        exit()
+                        transfer()
                     else:
                         print("Please enter a valid response.")
             elif x == "outside bet" or x == "outside bets" or x == "outside":
@@ -72,7 +73,7 @@ def Ruleta(budget):
                     if y == "yes":
                         break
                     elif y == "no":
-                        exit()
+                        transfer()
                     else:
                         print("Please enter a valid response.")
             elif x == "random bets" or x == "random bets" or x == "random":
@@ -99,7 +100,7 @@ def Ruleta(budget):
                     if y == "yes":
                         break
                     elif y == "no":
-                        exit()
+                        transfer()
                     else:
                         print("Please enter a valid response.")
             else:
