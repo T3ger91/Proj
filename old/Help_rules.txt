@@ -1,0 +1,63 @@
+---------------------
+Plugins and software:
+Keyboard
+Pygame
+Random
+Os
+PySimplyGUI
+Tkinter
+Python 3
+Time
+Pip
+Git
+---------------------
+rules for each game
+
+Roulette
+    There are three types of bets - inside bets, outside bets andf random bets. 
+    There are 36 slots so make sure when entering bets to enter a valid number. 
+
+    Outside bets:
+    in this type of bet player can bet on five different things:
+    color = if the ball lands on a red or a black place
+    odd and even numbers = of the ball lands on an odd of an even number.
+    low and high = if the bal lands on a numbers from 1 to 18 or from  19 to 36
+    dozens = a player can bet on groups of numbers. (1-12),(13-24) and (25-36)
+    columns = you bet on what column the ball will land
+
+    Inside bets:
+    In this type of bet one bets on number spots.
+    Straight up bet = a players bets on a single number
+    Split bet = a player bets on 2 numbers
+    Street bet = a player bets on 3 numbers
+    Corner bet = a player bats on 4 numbers
+    Line bet = a player bets on 6 numbers
+
+
+    Random bets:
+    A player can enter any number they want the only limit is that they can bet only up to 18 numbers. 
+----------------
+Poker
+    There are many combinations a player can bet on
+
+    Royal Flush - A, K, Q, J, 10 of the same suit.
+    Straight Flush - Five cards of the same suit in numerical order.
+    Four of a Kind - Four cards of the same rank and one side card, or kicker.
+    Full House - Three cards of the same rank and two cards of another rank.
+    Flush - Any five cards of the same suit, not in numerical order.
+    Straight - Five cards in numerical order, but not of the same suit.
+    Three of a Kind - Three cards of the same rank and two side cards.
+    Two Pair - Two cards of one rank, two cards of another rank, and one side card.
+    One Pair - Two cards of the same rank and three side cards.
+    High Card - When no other hand is made, the highest-ranking card in a player's hand is used to determine the winner.
+  
+
+-----------------
+Russian Roulette
+    The rules for a russian roulette are simple. The player is given a gun, in there are 6 slots and 1 of them contains a bullet. 
+    If the player is lucky and doesn't get killed, they will earn a financial reward. 
+-----------------
+Slots
+    A player bets a certain amound of money and runs the machine and he will get a group of three numbers. 
+    Depending on if three or two numbers are the same and what numbers are they, the player will get win a 
+    different amount of money. 

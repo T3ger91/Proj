@@ -1,0 +1,14 @@
+encountering an enemy
+    A player can either choose to fight - press f or escape - press e. 
+    
+    if the player wants to fight:
+        A fight is done my rolling a die. There ale also weapons that give the player higher chance of beating the enemy - the die has a lower number of edges.
+        The player gets a random weapon and will see how many sided die they have.
+        The weapons you could get plus the number of die edges - fists = 20 , baton = 18, knife = 16, shotgun = 12, sng = 10, m4 = 8, rpg = 6
+        If the value you roll is higher than 5 - you weren't able to beat the enemy
+        If the value you roll is 5 or less - you have beaten the enemy
+    
+    if the player chooses to escape:
+        They sucesfully ran away from the monster
+
+    
