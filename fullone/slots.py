@@ -38,17 +38,17 @@ def slots():
                 print(a, b, c)
                 if a == b and a == c:
                     slow_print("Nice")
-                    slow_print(f"You won {money_win3()}.")
+                    slow_print(f"You have won {money_win3()}.")
                     slots_story()
                 elif a == b or a == c:
                     slow_print("Two are the same.")
                     slow_print(money_win2a())
                     slots_story()
                 elif b == c:
-                    slow_print(f" You won {money_win2b()}. ")
+                    slow_print(f" You have won {money_win2b()}. ")
                     slots_story()
                 else:
-                    slow_print("you lost ")
+                    slow_print("you have lost ")
                     slots_story()
 
             while True:
