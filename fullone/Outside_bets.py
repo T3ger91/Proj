@@ -1,6 +1,8 @@
 #outsidebets function, cant be separated from: inside bets,bets,ruleta
 from slow_print import slow_print
 from slow_printRL import slow_printRL
+#func name can be used by this name
+#in use by Ruleta.py
 def Outside_bet(deposite):
     import random
     from time import sleep
