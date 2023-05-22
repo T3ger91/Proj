@@ -21,6 +21,7 @@ def Inside_bet(deposite):
                     color = "Balck"
                 else:
                     color = "Red"
+                    #errors check part dhouw
             try:
                 pole = []
                 #enter the lucky numbers
@@ -138,6 +139,6 @@ def Inside_bet(deposite):
         else:
             slow_print("Chose the option from menu: ")
     return deposite
-            
+            #main sent for tester
 if __name__ == "__main__":
     print("Tento kod se spusti pouze tehdy když jse spuštěn jako hlavní program")
