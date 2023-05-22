@@ -1,6 +1,7 @@
 #slots game, main and only one func for the game
 from transfer import transfer
 from slow_print import slow_print
+#main func, no were in use, only slowprint.py needed to go
 def slots():
     import random
     slow_print("In the room you see an old slot machine.")
@@ -12,6 +13,7 @@ def slots():
             print("Please answer with a simple yes or no. ")
             slow_print("Do you want to play? ")
             que = input()
+            #next game logic if u choose no as an answer
         if que.lower() == "no":
             slow_print(f"Too bad I guess... \n")
             transfer()
