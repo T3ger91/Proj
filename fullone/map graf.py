@@ -1,6 +1,6 @@
 import pygame
 import random
-
+#grafick map witch is in progres but i hate it 
 
 pygame.init()
 
