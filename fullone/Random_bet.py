@@ -9,6 +9,7 @@ def Random_bet(deposite):
     choice = input()
     #logic for it with chances
     while True:
+        #random num and color 
         number = random.randint(0,36)
         if number == 0:
             color = "Green"
@@ -17,6 +18,7 @@ def Random_bet(deposite):
                 color = "Balck"
             else:
                 color = "Red"
+                #wrighting func 
         try:
             pole = []
             stringpole = choice.split(",")
@@ -26,6 +28,7 @@ def Random_bet(deposite):
             if int(i) > 36:
                 print("*" * 40)
                 print("Enter the number on the roulette wheel!")
+                #win/lose logic, simple as hell: a is your num, b is random num, if a=b u win, if a/=/b u lose 
             else:       
                 if number in pole:
                     sleep(1)
@@ -39,6 +42,7 @@ def Random_bet(deposite):
                     deposite = 0
                     #print(deposite)
                     break
+                    #excepting error form syn 
         except ValueError:
             print("*" * 40)
             print("Enter correct syntax")
