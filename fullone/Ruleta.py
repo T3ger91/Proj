@@ -1,5 +1,6 @@
 #main file for rululete game, inculudes inside, outside and random bets
 #cant work without mantioned files
+#also nowere in use so used as single game without conection to others
 def Ruleta(budget):
     global deposite
     from slow_print import slow_print
@@ -22,6 +23,7 @@ def Ruleta(budget):
         x = input().lower()
 
         try:
+            #imp[ort usage 
             if x == "inside bets" or x == "inside bet" or x == "inside":
                 while True:
                     try:
@@ -55,6 +57,7 @@ def Ruleta(budget):
                         slow_print("Enter the amount you want to bet:\n")
                         deposite = int(input())
                         if deposite > budget:
+                            #no more money then u have bitch 
                             print("U cant bet more than u have")
                             continue
                         budget = budget - deposite
@@ -70,6 +73,7 @@ def Ruleta(budget):
                 while True:
                     slow_print("Do you want play again? Yes or No\n")
                     y = input().lower()
+                    #logic for next random game inm transfers
                     if y == "yes":
                         break
                     elif y == "no":
@@ -105,6 +109,7 @@ def Ruleta(budget):
                         print("Please enter a valid response.")
             else:
                 slow_print("Enter opotion from menu!!!")
+                #error staff 
         except ValueError:
             print("Enter correct syntax!!!")
 
