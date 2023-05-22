@@ -1,11 +1,13 @@
 #main and only one file for Rusian rulet-RR game
+#transfering file, with logic with unrepeating games in a row
 from transferR import transfer
+#func start, no were in use althout by it self 
 def russia_roulette():
     import random
     money = []
     money_win = 200
     print("You found yourself before a small table. On it lies a gun. You have a choice to make.")
-#main function
+#main after start logic
     def roulette():
         run = random.randint in (1,6)
         if run == 1:
