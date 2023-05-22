@@ -2,6 +2,9 @@ import random
 from BCC import Poker
 from Ruleta import Ruleta
 from slow_print import slow_print
+#logic and transfer staff, making tuff thing but it works
+#whole branch off transfers are same for 99%
+#in each one u have swaped games out off that witch game calling this func, ,C,L,R.
 def transfer():
     R = 0
     global budget
