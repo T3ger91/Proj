@@ -1,7 +1,8 @@
 #inside bet function part off Ruleta
 #cant be separated from: inside bets,bets,ruleta
 from slow_print import slow_print
-from slow_printRL import slow_printRL
+from slow_printRL import slow_printRL\
+#func start and used by name Inside_bet
 def Inside_bet(deposite):
     import random
     from time import sleep
