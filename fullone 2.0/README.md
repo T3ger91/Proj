@@ -1,2 +1,2 @@
-11.05 ver of struc can posibly work 
-read read me BLAT
+29.05 ver of struc can work 
+read read me BLAT for bigger anotation 
