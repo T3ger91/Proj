@@ -1,2 +1,1 @@
-11.05 ver of struc can posibly work 
-read read me BLAT
+28.05. files from fullone 1, transfers are shit and nothing seams to be hopefull.
