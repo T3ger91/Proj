@@ -1,3 +1,5 @@
+#slots, can be used alone, like 'slots as sl'
+#main func 
 def slots(budget):
     firt_deposite = budget
     #from rounding_almost_like_in_matrix import round
@@ -6,6 +8,7 @@ def slots(budget):
     term = 0
     z = 0
     qark = 0
+    #budget logic
     while True:
         if budget == 0:
             slow_print("You lost your entier budget foll !!!\nGAME OVER")
@@ -13,6 +16,7 @@ def slots(budget):
         if term == 1:
             break    
         else:
+            #if budget not a 0 go a had and play the game
             while True:
                 if z == 0:
                     if qark == 0:
@@ -23,8 +27,10 @@ def slots(budget):
                 else:
                     slow_print("Do you want to play again?  ")
                 que = input().lower()
+                #logic if yes and full game in it
                 if que.lower() == "yes":
                     slow_print("Great. ")
+                    #syntax and shit staff
                     while True:        
                         try:
                             slow_print("How much do you want to bet from your budget?")
@@ -39,7 +45,7 @@ def slots(budget):
                                 break
                         except ValueError:
                             print("Enter a valid number!")
-
+                    #entaire game here
                     """
                         slow_print("This is by how much more percentagewise you can win with different numbers \n")
                         slow_print("For three of the same symbol: \n")
@@ -49,17 +55,18 @@ def slots(budget):
                         for i, y in bet_per2.items():
                             print(f"{i} + {int(float(y) * 100)}% of your bet")
                     """
+                    #how much u ll * ur bet
                     bet_per3 = {1: 0.9, 2: 0.9, 3: 0.9, 4: 0.8, 5: 0.7, 6: 1.7}
                     bet_per2 = {1: 0.5, 2: 0.4, 3: 0.6, 4: 0.4, 5: 0.5, 6: 1.0}
 
                     a = random.randint(1, 6)
                     b = random.randint(1, 6)
                     c = random.randint(1, 6)
-
+                       #wins logic
                     win3 = bet + (bet * bet_per3.get(a))
                     win2a = bet + (bet * bet_per2.get(a))
                     win2b = bet + (bet * bet_per2.get(b))
-
+                    
                     print(a, b, c)
                     if a == b and a == c:
                         slow_print("Nice")
@@ -88,7 +95,7 @@ def slots(budget):
                         slow_print(f"From now on your budget is {budget}.\n")
                         z = z + 1
                         break
-
+                        #if no logic
                 if que.lower() == "no":
                     if budget > firt_deposite:
                         slow_print("Well that's not bed")
