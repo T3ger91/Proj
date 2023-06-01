@@ -16,6 +16,7 @@ def gameR():
             break
         if money >= 100000:
             slow_print("You have reached 100,000 you can go... You Won")
+            slow_print("you opened the door, where you see your mother standing.\n She says to you do you want to keep playing?.\n No.")
             break
         R = random.randint(1, 4)
         
